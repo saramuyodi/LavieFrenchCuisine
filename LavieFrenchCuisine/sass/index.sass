@@ -1,0 +1,333 @@
+// COLORS
+$wht: #ffffff
+$lgray: #e8e8e8
+$dgray: #333333
+$ddgray: #222222
+$pgreen: #9c8c3c
+$blk: #000000
+
+// FONTS
+@import url('https://fonts.googleapis.com/css?family=Montserrat|Sacramento')
+$font: 'Montserrat', sans-serif
+$hfont: 'Sacramento', cursive
+
+// MIXINS
+@mixin centerpgreen
+    text-align: center
+    color: $pgreen
+ 
+@mixin flexbox
+    display: flex
+    align-items: center
+    text-align: center
+
+
+body 
+    margin: 0
+    font-family: $font
+    letter-spacing: 0.2em
+
+h1
+    font: 30px $hfont
+    line-height: 20px
+    letter-spacing: 0.2em
+
+h2
+    font: 60px $font
+    text-transform: uppercase
+
+h3
+    font: 50px $hfont
+    line-height: 20px
+    letter-spacing: 0.2em
+
+h4
+    font: 14px $font
+    text-transform: uppercase
+    font-weight: bold
+
+.hr 
+    @include centerpgreen
+    width: 50%
+    height: 1.4px
+    font-size: 1px
+    background-color: $pgreen
+    line-height: 1px
+    margin-top: 6px 
+    margin-left: 2.5%
+    margin-bottom: 10px
+
+.hrc  
+    @include centerpgreen
+    width: 90%
+    height: 1.4px
+    font-size: 1px
+    background-color: $pgreen
+    line-height: 1px
+    margin-top: 6px
+    margin-bottom: 10px   
+// //////////////////////////// NAV BAR 
+#navbar 
+    overflow: hidden
+    position: -webkit-sticky
+    display: grid
+    width: 100%
+    grid-template-columns: 1fr 1fr
+    grid-column-gap: 1px
+    background-color: $dgray
+    color: $pgreen
+    padding: 10px 0 10px 0 
+    font: 13px $font
+    letter-spacing: 0.2em
+    a 
+        color: $lgray
+        text-align: center
+        padding: 8px 24px
+        text-decoration: none
+        font: 13px $font
+        text-transform: uppercase
+        &:hover    
+            background-color: $pgreen
+            color: $dgray
+        &:active 
+            background-color: $pgreen
+            color: $wht
+.navlinks
+    background-color: $ddgray
+    margin-right: 0
+
+.navinfo
+    text-align: right
+    padding-right: 14px
+
+.sticky 
+    position: fixed
+    width: 100%
+    left: 0
+    top: 0
+    z-index: 100
+    border-top: 20px
+
+// ////////////////////////// RESTAURANT HEADER
+
+header
+    @include flexbox
+    flex-direction: row
+    text-align: center
+    height: 500px
+    background: $wht
+
+.headerimage
+    overflow: hidden
+    width: 50%
+
+.logo 
+    flex: 50%
+    img 
+        width: 80%
+
+.diningtable 
+    opacity: 0.8
+ 
+
+
+// ////////////////////////// RESTAURANT LOCATION    
+.ourlocation 
+    @include flexbox
+    justify-content: center
+    padding-left: 20%
+    padding-right: 20%
+    background: $lgray
+    border-top: 10px double $wht
+    border-bottom: 10px double $wht
+    height: 350px
+    color: $dgray
+
+    
+// //////////////////////////// OUR STORY PREVIEW
+.ourstorypreview 
+    @include flexbox
+    margin: 0
+    background: linear-gradient(rgba(20,20,20, 1), rgba(20,20,20, .4)), url('../images/kitchen.jpg')
+    background-size: 100%
+    background-position: 50% 45%
+    height: 500px   
+    color: $lgray
+    justify-content: center
+
+// //////////////////////////// MENU PREVIEW
+.menupreview
+    display: grid
+    height: 1000px
+    grid-template-columns: 50% 50%
+    grid-template-rows: 50% 50%
+    grid-gap: 10px
+    overflow: hidden
+    img 
+        object-fit: cover
+        width: 100%
+        max-height: 100%
+    div
+        @include flexbox
+        flex-direction: column
+        justify-content: center
+        line-height: 25px
+
+.formob img
+    display: none
+
+.menudescription
+    padding: 10%
+
+button
+    background-color: $dgray
+    color: $wht
+    padding: 15px 30px
+    font: 12px $font
+    text-transform: uppercase
+    border: none
+    border-radius: 40px
+    letter-spacing: 2px
+    transition-duration: .4s
+    cursor: pointer
+    a 
+        text-decoration: none
+        color: $wht
+    &:hover
+        background-color: $blk
+
+// /////////////////////////////// FOOTER
+footer 
+    @include centerpgreen
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr
+    background-color: $ddgray
+    font-size: 12px
+    height: 120px
+
+a, a:hover, a:active, a:visited
+    text-decoration: none
+    font: 13px $font
+    color: $pgreen
+
+// ///////////////////////////// HEADER 2
+        
+.header 
+    height: 100px
+    padding: 10px
+    img 
+        height: 100px
+        width: auto
+
+// ////////////////////////////////// OUR STORY
+.ourstory
+    height: 600px
+    background: url('../images/baker.jpg')
+    background-size: cover
+    opacity: .9
+
+.thestorybox
+    width: 40%
+    float: right
+    background-color: $blk
+    color: $wht
+    opacity: .7
+    text-align: center
+    height: 500px
+    margin-top: 20px 
+    padding: 20px 40px
+    margin-right: 3%
+    line-height: 30px
+
+// ///////////////////////////// MENU
+.menu
+    display: grid
+    grid-template-columns: 50% 50%
+    height: 750px
+    background-color: $wht
+    
+.displayfood    
+    background: url('../images/salmonplate.jpg')
+    background-size: cover
+    background-position: 20% 30%
+    opacity: 0.95
+
+table, tr, td
+    width: 85%
+
+.thefoodlist
+    border-left: 1px solid $pgreen
+    padding-left: 12px
+    margin-left: 3px
+    ul 
+        list-style: none
+        line-height: 27px
+
+// /////////////////////////////// PHOTOS
+.gallery 
+    float: left
+    margin: 5px
+    border: 1px solid $pgreen
+    width: 780px
+    &:hover 
+        border: 1px solid $dgray
+    img 
+        width: 100%
+        height: auto
+
+.desc 
+    padding: 15px
+    text-align: center
+
+// ///////////////////////////// CONTACT
+.contactpage
+    height: 640px
+    background: url('../images/850.jpg')
+    background-size: cover
+    opacity: .9
+
+.contactformpage
+    float: left
+    text-align: center
+    line-height: 23px
+    border-radius: 3px
+    width: 50%
+    margin-left: 25%
+    margin-right: 25%
+    margin-top: 20px
+    padding-top: 10px
+    background-color: $wht
+    height: 580px
+
+form 
+    transition: all 4s ease-in-out
+    
+.formstyle
+    width: 70%
+    border: none
+    outline: none
+    border-bottom: 0.3px solid $pgreen
+    color: $ddgray
+    font-size: 14px
+    font-family: $font
+    margin-bottom: 16px
+
+input 
+    height: 40px
+    background-color: $lgray
+    font-family: $font
+
+input:focus, textarea:focus
+    background-color: $dgray
+    color: $wht
+
+textarea
+    height: 10em
+    padding-top: 10px
+    background-color: $lgray
+
+select 
+    background-color: $lgray
+    font-family: $font
+    border: none
+    outline: none

@@ -1,0 +1,301 @@
+@import url("https://fonts.googleapis.com/css?family=Montserrat|Sacramento");
+body {
+  margin: 0;
+  font-family: "Montserrat", sans-serif;
+  letter-spacing: 0.2em; }
+
+h1 {
+  font: 30px "Sacramento", cursive;
+  line-height: 20px;
+  letter-spacing: 0.2em; }
+
+h2 {
+  font: 60px "Montserrat", sans-serif;
+  text-transform: uppercase; }
+
+h3 {
+  font: 50px "Sacramento", cursive;
+  line-height: 20px;
+  letter-spacing: 0.2em; }
+
+h4 {
+  font: 14px "Montserrat", sans-serif;
+  text-transform: uppercase;
+  font-weight: bold; }
+
+.hr {
+  text-align: center;
+  color: #9c8c3c;
+  width: 50%;
+  height: 1.4px;
+  font-size: 1px;
+  background-color: #9c8c3c;
+  line-height: 1px;
+  margin-top: 6px;
+  margin-left: 2.5%;
+  margin-bottom: 10px; }
+
+.hrc {
+  text-align: center;
+  color: #9c8c3c;
+  width: 90%;
+  height: 1.4px;
+  font-size: 1px;
+  background-color: #9c8c3c;
+  line-height: 1px;
+  margin-top: 6px;
+  margin-bottom: 10px; }
+
+#navbar {
+  overflow: hidden;
+  position: -webkit-sticky;
+  display: grid;
+  width: 100%;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 1px;
+  background-color: #333333;
+  color: #9c8c3c;
+  padding: 10px 0 10px 0;
+  font: 13px "Montserrat", sans-serif;
+  letter-spacing: 0.2em; }
+  #navbar a {
+    color: #e8e8e8;
+    text-align: center;
+    padding: 8px 24px;
+    text-decoration: none;
+    font: 13px "Montserrat", sans-serif;
+    text-transform: uppercase; }
+    #navbar a:hover {
+      background-color: #9c8c3c;
+      color: #333333; }
+    #navbar a:active {
+      background-color: #9c8c3c;
+      color: #ffffff; }
+  #navbar .navlinks {
+    background-color: #222222;
+    margin-right: 0; }
+  #navbar .navinfo {
+    text-align: right;
+    padding-right: 14px; }
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  left: 0;
+  top: 0;
+  z-index: 100;
+  border-top: 20px; }
+
+header {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  flex-direction: row;
+  height: 500px;
+  background: #ffffff; }
+
+.logo {
+  flex: 50%;
+  background: #ffffff; }
+
+.diningtable {
+  opacity: 0.8; }
+
+.headerimage {
+  flex: 50%; }
+
+.ourlocation {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  background: #e8e8e8;
+  border-top: 10px double #ffffff;
+  border-bottom: 10px double #ffffff;
+  height: 350px;
+  color: #333333; }
+
+.ourstorypreview {
+  display: flex;
+  align-items: center;
+  text-align: center;
+  margin: 0;
+  background: linear-gradient(#141414, rgba(20, 20, 20, 0.4)), url("../images/kitchen.jpg");
+  background-size: 100%;
+  background-position: 50% 45%;
+  height: 500px;
+  color: #e8e8e8;
+  justify-content: center; }
+
+.menupreview {
+  display: grid;
+  height: 1000px;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  grid-gap: 10px;
+  overflow: hidden; }
+  .menupreview img {
+    object-fit: cover;
+    width: 100%;
+    max-height: 100%; }
+  .menupreview div {
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    justify-content: center;
+    line-height: 25px; }
+
+.menudescription {
+  padding: 10%; }
+
+button {
+  background-color: #333333;
+  color: #ffffff;
+  padding: 15px 30px;
+  font: 12px "Montserrat", sans-serif;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 40px;
+  letter-spacing: 2px;
+  transition-duration: 0.4s;
+  cursor: pointer; }
+  button a {
+    text-decoration: none;
+    color: #ffffff; }
+  button:hover {
+    background-color: #000000; }
+
+footer {
+  text-align: center;
+  color: #9c8c3c;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  background-color: #222222;
+  font-size: 12px;
+  height: 120px; }
+
+a, a:hover, a:active, a:visited {
+  text-decoration: none;
+  font: 13px "Montserrat", sans-serif;
+  color: #9c8c3c; }
+
+.header {
+  height: 100px;
+  padding: 10px; }
+  .header img {
+    height: 100px;
+    width: auto; }
+
+.ourstory {
+  height: 600px;
+  background: url("../images/baker.jpg");
+  background-size: cover;
+  opacity: 0.9; }
+
+.thestorybox {
+  width: 40%;
+  float: right;
+  background-color: #000000;
+  color: #ffffff;
+  opacity: 0.7;
+  text-align: center;
+  height: 500px;
+  margin-top: 20px;
+  padding: 20px 40px;
+  margin-right: 3%;
+  line-height: 30px; }
+
+.menu {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  height: 750px;
+  background-color: #ffffff; }
+
+.displayfood {
+  background: url("../images/salmonplate.jpg");
+  background-size: cover;
+  background-position: 20% 30%;
+  opacity: 0.95; }
+
+table, tr, td {
+  width: 85%; }
+
+.thefoodlist {
+  border-left: 1px solid #9c8c3c;
+  padding-left: 12px;
+  margin-left: 3px; }
+  .thefoodlist ul {
+    list-style: none;
+    line-height: 27px; }
+
+.gallery {
+  float: left;
+  margin: 5px;
+  border: 1px solid #9c8c3c;
+  width: 780px; }
+  .gallery:hover {
+    border: 1px solid #333333; }
+  .gallery img {
+    width: 100%;
+    height: auto; }
+
+.desc {
+  padding: 15px;
+  text-align: center; }
+
+.contactpage {
+  height: 640px;
+  background: url("../images/850.jpg");
+  background-size: cover;
+  opacity: 0.9; }
+
+.contactformpage {
+  float: left;
+  text-align: center;
+  line-height: 23px;
+  border-radius: 3px;
+  width: 50%;
+  margin-left: 25%;
+  margin-right: 25%;
+  margin-top: 20px;
+  padding-top: 10px;
+  background-color: #ffffff;
+  height: 580px; }
+
+form {
+  transition: all 4s ease-in-out; }
+
+.formstyle {
+  width: 70%;
+  border: none;
+  outline: none;
+  border-bottom: 0.3px solid #9c8c3c;
+  color: #222222;
+  font-size: 14px;
+  font-family: "Montserrat", sans-serif;
+  margin-bottom: 16px; }
+
+input {
+  height: 40px;
+  background-color: #e8e8e8;
+  font-family: "Montserrat", sans-serif; }
+
+input:focus, textarea:focus {
+  background-color: #333333;
+  color: #ffffff; }
+
+textarea {
+  height: 10em;
+  padding-top: 10px;
+  background-color: #e8e8e8; }
+
+select {
+  background-color: #e8e8e8;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  outline: none; }
+
+/*# sourceMappingURL=index.css.map */

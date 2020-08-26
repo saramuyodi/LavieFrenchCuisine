@@ -1,0 +1,83 @@
+
+@media (max-width: 1004px) {
+    #navbar {
+        grid-template-columns: 1fr;
+    }
+}
+
+
+@media (max-width: 411px) {
+    #navbar {
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+    #navbar a {
+        padding: 10px 10px;
+    }
+
+    .navinfo {
+        text-align: center;
+        padding: 10px;
+    }
+
+    .ourlocation {
+        height: 420px;
+        font-size: 25px;
+    }
+
+    .ourlocation h1 {
+        font-size: 45px;
+    }
+
+    .ourstorypreview {
+        height: 300px;
+    }
+
+    .ourstorypreview h2 {
+        font-size: 30px;
+    }
+    
+    .menupreview {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        height: 1600px;
+        padding: 10px;
+        padding-bottom: 10px;
+        font-size: 22px;
+        line-height: 40px;
+    }
+
+    .menupreview h3 {
+        font-size: 60px;
+        line-height: 55px;
+    }
+    .forweb img {
+        display: none;
+    }
+    .formob img {
+        display: block;
+    }
+    
+    footer {
+        height: 155px;
+    }
+}
+
+@media (max-width: 375px) {
+    #navbar {
+        font-size: 14px;
+        padding: 20px;
+    }
+
+    #navbar a {
+        padding: 5px 5px;
+    }
+    .headerimage {
+        display: none;
+    }
+
+    .logo {
+        flex: 100%;
+    }
+}
